@@ -3,7 +3,7 @@ const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector("[data-nav-links]");
 const whatsappForm = document.querySelector("[data-whatsapp-form]");
 const formNote = document.querySelector("[data-form-note]");
-const whatsappNumber = "919394590432";
+const whatsappNumber = atob("OTE5Mzk0NTkwNDMy");
 const projectCards = document.querySelectorAll(".project-card");
 const sectionLinks = document.querySelectorAll(".nav-links a[href^='#']");
 const revealItems = document.querySelectorAll(".reveal-on-scroll, .project-card, .skills-grid a, .testimonial-card, .contact-panel");
@@ -88,6 +88,7 @@ if (whatsappForm) {
     }
 
     const formData = new FormData(whatsappForm);
+    if (formData.get("_hp")) return; // Honeypot trigger
     const name = formData.get("name");
     const email = formData.get("email");
     const message = formData.get("message");
@@ -312,12 +313,13 @@ document.addEventListener("click", (event) => {
   const reviewNote = document.querySelector('[data-review-note]');
   if (!reviewForm) return;
 
-  const emailAddress = 'jyotishmansaikia.web@gmail.com';
+  const emailAddress = atob("anlvdGlzaG1hbnNhaWtpYS53ZWJAZ21haWwuY29t");
 
   reviewForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const formData = new FormData(reviewForm);
+    if (formData.get("_hp")) return; // Honeypot trigger
     const name = formData.get('reviewer-name');
     const role = formData.get('reviewer-role') || 'Not specified';
     const rating = formData.get('rating');
@@ -579,7 +581,7 @@ document.addEventListener("click", (event) => {
 
   if (!bubbleBtn || !chatbox || !closeBtn || !chatForm || !chatInput) return;
 
-  const whatsappNumber = "919394590432";
+  const whatsappNumber = atob("OTE5Mzk0NTkwNDMy");
 
   // Set initial welcome bubble time to current clock time
   if (chatTime) {
@@ -636,10 +638,13 @@ document.addEventListener("click", (event) => {
 
       const userMsgDiv = document.createElement('div');
       userMsgDiv.className = 'wa-chatbox-msg bubble-sent';
-      userMsgDiv.innerHTML = `
-        <p>${encodeHTML(typedText)}</p>
-        <span class="wa-chatbox-time">${hrs}:${mins}</span>
-      `;
+      const msgP = document.createElement('p');
+      msgP.textContent = typedText;
+      const timeSpan = document.createElement('span');
+      timeSpan.className = 'wa-chatbox-time';
+      timeSpan.textContent = `${hrs}:${mins}`;
+      userMsgDiv.appendChild(msgP);
+      userMsgDiv.appendChild(timeSpan);
       chatBody.appendChild(userMsgDiv);
       chatBody.scrollTop = chatBody.scrollHeight; // autoscroll
     }
