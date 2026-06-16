@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Easy Solutions — Custom websites made simple, responsive, and professional for students, businesses, clinics, restaurants, and local brands by Jyotishman Saikia.">
+  <title>Easy Solutions | Web Development</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@700;800&family=Poppins:wght@800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Background Effects Layer -->
+  <div class="bg-effects">
+    <div class="grid-pattern"></div>
+    <div class="bg-orb bg-orb--primary"></div>
+    <div class="bg-orb bg-orb--secondary"></div>
+    <div id="particles-container"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#home">Easy<span> Solutions</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" data-nav-links>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#process">Process</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <!-- The Active Front Content (Layered In Front) -->
+      <div class="hero-copy" id="hero-content-area">
+        <div id="cursor-glow"></div>
+        <p class="eyebrow">Web Development Service</p>
+        <h1>
+          <span class="color-word">Easy</span>
+          <span class="color-word">
+            Solutions
+            <svg class="scribble-underline" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="scribble-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#DC143C" />
+                  <stop offset="50%" stop-color="#FF4D4D" />
+                  <stop offset="100%" stop-color="#FFFFFF" />
+                </linearGradient>
+              </defs>
+              <path d="M2,7 C30,2 70,2 98,6 C70,8 35,9 5,7 C30,6 65,5 95,5" stroke="url(#scribble-grad)" stroke-width="2.5" stroke-linecap="round" fill="none" />
+            </svg>
+          </span>
+        </h1>
+        <p class="hero-subtitle">Custom websites made simple, responsive, and professional for students, businesses, clinics, restaurants, and local brands.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View My Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Sleek horizontal stats bar at the bottom of the hero -->
+      <div class="hero-bottom-bar">
+        <div class="proof-panel-horizontal">
+          <div class="stat-item">
+            <strong>5+</strong>
+            <span>Projects Built</span>
+          </div>
+          <div class="stat-item">
+            <strong>Mobile</strong>
+            <span>Responsive Focus</span>
+          </div>
+          <div class="stat-item">
+            <strong>Git</strong>
+            <span>Version Control</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft reveal-on-scroll" id="about">
+      <div class="shell split-section">
+        <div>
+          <p class="section-kicker">About Me</p>
+          <h2>Building simple ideas into polished web pages.</h2>
+        </div>
+        <p>I am <strong>Jyotishman Saikia</strong>, a B.Tech student studying at NEHU. Through <strong>Easy Solutions</strong>, I build simple, attractive, and responsive websites for people who want a clean online presence without confusion. Every project is shaped with clear structure, modern styling, and organized code.</p>
+      </div>
+    </section>
+
+    <section class="section skills-section shell reveal-on-scroll" id="skills">
+      <div class="skills-layout">
+        <div class="skills-content">
+          <div class="section-heading">
+            <p class="section-kicker">Skills</p>
+            <h2>Tools I use to build better websites.</h2>
+            <p class="skills-intro">A strong base in structure, styling, coding practice, and version control helps me
+              create responsive websites with organized files and clean presentation.</p>
+          </div>
+          <div class="skills-grid">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">HTML</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">JavaScript</a>
+            <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VS Code</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" rel="noopener noreferrer">Responsive Design</a>
+            <a href="https://www.interaction-design.org/literature/topics/ui-design" target="_blank" rel="noopener noreferrer">Basic UI Design</a>
+          </div>
+        </div>
+
+        <div class="skills-image-card" data-skills-slideshow>
+          <div class="skills-cube" data-skills-cube>
+            <!-- Face 1: HTML Code Editor -->
+            <div class="skills-cube-face mockup-window code-theme">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span class="mdot"></span><span class="mdot"></span><span class="mdot"></span></div>
+                <div class="mockup-title">index.html</div>
+              </div>
+              <div class="mockup-body">
+<pre><code><span class="syntax-tag">&lt;section</span> <span class="syntax-attr">id</span>=<span class="syntax-string">"hero"</span><span class="syntax-tag">&gt;</span>
+  <span class="syntax-tag">&lt;h1&gt;</span>Building web ideas.<span class="syntax-tag">&lt;/h1&gt;</span>
+  <span class="syntax-tag">&lt;p&gt;</span>Clean, responsive &amp; fast.<span class="syntax-tag">&lt;/p&gt;</span>
+  <span class="syntax-tag">&lt;button</span> <span class="syntax-attr">class</span>=<span class="syntax-string">"btn"</span><span class="syntax-tag">&gt;</span>Start<span class="syntax-tag">&lt;/button&gt;</span>
+<span class="syntax-tag">&lt;/section&gt;</span></code></pre>
+              </div>
+            </div>
+
+            <!-- Face 2: JavaScript Logic -->
+            <div class="skills-cube-face mockup-window js-theme">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span class="mdot"></span><span class="mdot"></span><span class="mdot"></span></div>
+                <div class="mockup-title">app.js</div>
+              </div>
+              <div class="mockup-body">
+<pre><code><span class="syntax-keyword">const</span> <span class="syntax-func">initApp</span> = <span class="syntax-keyword">async</span> () =&gt; {
+  <span class="syntax-keyword">const</span> ui = <span class="syntax-keyword">new</span> <span class="syntax-class">Interface</span>();
+  <span class="syntax-keyword">await</span> ui.<span class="syntax-func">render</span>();
+  
+  console.<span class="syntax-func">log</span>(<span class="syntax-string">"App loaded! 🚀"</span>);
+};</code></pre>
+              </div>
+            </div>
+
+            <!-- Face 3: Terminal / Git -->
+            <div class="skills-cube-face mockup-window term-theme">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span class="mdot"></span><span class="mdot"></span><span class="mdot"></span></div>
+                <div class="mockup-title">bash</div>
+              </div>
+              <div class="mockup-body">
+                <p><span class="term-prompt">~</span> <span class="term-cmd">git add .</span></p>
+                <p><span class="term-prompt">~</span> <span class="term-cmd">git commit -m "Deploy site"</span></p>
+                <p class="term-output">[main 8a12c4f] Deploy site</p>
+                <p class="term-output"> 3 files changed, 45 insertions(+)</p>
+                <p><span class="term-prompt">~</span> <span class="term-cursor">_</span></p>
+              </div>
+            </div>
+
+            <!-- Face 4: UI Wireframe -->
+            <div class="skills-cube-face mockup-window ui-theme">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span class="mdot"></span><span class="mdot"></span><span class="mdot"></span></div>
+                <div class="mockup-title">Responsive Design</div>
+              </div>
+              <div class="mockup-body ui-body">
+                <div class="ui-nav"></div>
+                <div class="ui-hero"></div>
+                <div class="ui-grid">
+                  <div class="ui-card"></div>
+                  <div class="ui-card"></div>
+                  <div class="ui-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-slide-dots">
+            <button class="skills-slide-dot is-active" aria-label="Show image 1" data-slide="0"></button>
+            <button class="skills-slide-dot" aria-label="Show image 2" data-slide="1"></button>
+            <button class="skills-slide-dot" aria-label="Show image 3" data-slide="2"></button>
+            <button class="skills-slide-dot" aria-label="Show image 4" data-slide="3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal-on-scroll" id="process">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">How It Works</p>
+          <h2>Three steps. No complications.</h2>
+          <p class="section-subtitle-text">I keep the process simple so you don't have to spend time on back-and-forth. Here's exactly what happens:</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step" data-flip-card>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="step-number">1</div>
+                <h3>Understand Your Business</h3>
+              </div>
+              <div class="flip-card-back">
+                <div class="step-number">1</div>
+                <h3>Understand Your Business</h3>
+                <p>We have a quick chat on WhatsApp or in person. I ask you about your business, what you offer, your customers, and what you need. No forms, no jargon.</p>
+              </div>
+            </div>
+          </div>
+          <div class="process-step" data-flip-card>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="step-number">2</div>
+                <h3>Create & Share Drafts</h3>
+              </div>
+              <div class="flip-card-back">
+                <div class="step-number">2</div>
+                <h3>Create & Share Drafts</h3>
+                <p>I design the website and creatives and share them with you for feedback. You review, I adjust. Two rounds of changes included — until you're happy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="process-step" data-flip-card>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="step-number">3</div>
+                <h3>Deliver & Help You Launch</h3>
+              </div>
+              <div class="flip-card-back">
+                <div class="step-number">3</div>
+                <h3>Deliver & Help You Launch</h3>
+                <p>Your website goes live, your creatives are delivered, and I walk you through how to use and manage everything. You're never left figuring things out alone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft reveal-on-scroll" id="projects">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Featured work examples.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card" tabindex="0">
+            <div class="project-top portfolio" style="overflow: hidden; position: relative;">
+              <iframe src="https://myysite.vercel.app/" title="Portfolio website live preview" style="width: 400%; height: 400%; border: none; pointer-events: none; transform: scale(0.25); transform-origin: 0 0; position: absolute; top: 0; left: 0;" tabindex="-1"></iframe>
+            </div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>A responsive website to showcase skills, projects, and contact information.</p>
+              <span>HTML / CSS / JavaScript</span>
+              <div class="project-details">
+                <p>Includes a strong hero section, skills, projects, contact links, and a responsive layout for mobile
+                  and desktop screens.</p>
+                <a href="https://myysite.vercel.app/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; margin-top: 14px; color: var(--primary); font-weight: 700; font-size: 0.85rem;">
+                  View Live Site
+                  <span class="material-symbols-outlined" style="font-size: 1rem;">open_in_new</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <div class="project-top restaurant">
+              <img src="assets/project-restaurant.png" alt="Restaurant landing page project preview">
+            </div>
+            <div class="project-body">
+              <h3>Restaurant Landing Page</h3>
+              <p>A modern homepage for a restaurant with menu, hero section, and contact area.</p>
+              <span>HTML / CSS</span>
+              <div class="project-details">
+                <p>Designed with food highlights, menu sections, opening details, location information, and a clean
+                  booking CTA.</p>
+              </div>
+            </div>
+          </article>
+
+
+
+          <article class="project-card" tabindex="0">
+            <div class="project-top weather">
+              <img src="assets/project-weather-real.png" alt="Real weather app interface project preview">
+            </div>
+            <div class="project-body">
+              <h3>Weather App UI</h3>
+              <p>A weather interface showing city, temperature, and forecast cards.</p>
+              <span>HTML / CSS / JavaScript</span>
+              <div class="project-details">
+                <p>Shows current weather, daily forecast cards, temperature display, and a simple interface made for
+                  quick scanning.</p>
+                <a href="https://myyweather.vercel.app/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; margin-top: 14px; color: var(--primary); font-weight: 700; font-size: 0.85rem;">
+                  View Live Site
+                  <span class="material-symbols-outlined" style="font-size: 1rem;">open_in_new</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal-on-scroll" id="testimonials">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">Testimonials</p>
+          <h2>What people say about Easy Solutions.</h2>
+        </div>
+
+        <div class="testimonials-carousel-wrapper" data-testimonials-carousel>
+          <div class="testimonials-track" data-carousel-track>
+            <article class="testimonial-card" tabindex="0">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>"Easy Solutions made the website clean, fast, and simple to understand. The layout looked professional on
+                both phone and laptop."</p>
+              <div class="testimonial-author">
+                <span>AR</span>
+                <div>
+                  <strong>Arjun R.</strong>
+                  <small>Small Business Owner</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card featured-testimonial" tabindex="0">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>"The design was exactly what we needed: modern, responsive, and easy for visitors to use. Communication
+                was clear from start to finish."</p>
+              <div class="testimonial-author">
+                <span>NS</span>
+                <div>
+                  <strong>Nisha S.</strong>
+                  <small>Clinic Coordinator</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card" tabindex="0">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>"Our project was delivered with neat sections, good spacing, and a smooth contact flow. It gave our idea
+                a polished online look."</p>
+              <div class="testimonial-author">
+                <span>PD</span>
+                <div>
+                  <strong>Priyam D.</strong>
+                  <small>Student Project Lead</small>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-dots" data-carousel-dots>
+            <button class="carousel-dot is-active" data-dot="0" aria-label="Go to slide 1"></button>
+            <button class="carousel-dot" data-dot="1" aria-label="Go to slide 2"></button>
+            <button class="carousel-dot" data-dot="2" aria-label="Go to slide 3"></button>
+          </div>
+        </div>
+
+        <div class="review-compact">
+          <div class="review-compact-header">
+            <p class="section-kicker">Leave a Review</p>
+            <h3>Worked with us? Share your experience.</h3>
+          </div>
+          <form class="review-form" data-review-form>
+            <div class="review-form-row">
+              <div>
+                <label for="review-name">Name</label>
+                <input id="review-name" name="reviewer-name" type="text" placeholder="e.g. Priya M." required>
+              </div>
+              <div>
+                <label for="review-role">Role / Business</label>
+                <input id="review-role" name="reviewer-role" type="text" placeholder="e.g. Café Owner">
+              </div>
+            </div>
+
+            <div class="review-form-row">
+              <div>
+                <label>Rating</label>
+                <div class="star-rating-picker" data-star-picker>
+                  <button type="button" class="star-pick" data-star="1" aria-label="1 star">★</button>
+                  <button type="button" class="star-pick" data-star="2" aria-label="2 stars">★</button>
+                  <button type="button" class="star-pick" data-star="3" aria-label="3 stars">★</button>
+                  <button type="button" class="star-pick" data-star="4" aria-label="4 stars">★</button>
+                  <button type="button" class="star-pick" data-star="5" aria-label="5 stars">★</button>
+                </div>
+                <input type="hidden" name="rating" value="5" data-rating-value>
+              </div>
+            </div>
+
+            <label for="review-message">Your Review</label>
+            <textarea id="review-message" name="review-message" rows="3" placeholder="What was your experience?" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Review</button>
+            <p class="form-note" data-review-note>Your review will be sent directly to my email.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell reveal-on-scroll" id="contact">
+      <div class="section-heading">
+        <p class="section-kicker">Contact</p>
+        <h2>Let's work together.</h2>
+      </div>
+      <div class="contact-panel">
+        <div>
+          <p>Have a project or idea? Send the details and I will receive them on WhatsApp.</p>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" data-whatsapp-form>
+            <label for="visitor-name">Name</label>
+            <input id="visitor-name" name="name" type="text" placeholder="Your name" required>
+
+            <label for="visitor-email">Email</label>
+            <input id="visitor-email" name="email" type="email" placeholder="your@email.com" required>
+
+            <label for="visitor-message">Message</label>
+            <textarea id="visitor-message" name="message" rows="5" placeholder="Tell me about your project"
+              required></textarea>
+
+            <button class="btn btn-primary" type="submit">Send on WhatsApp</button>
+            <p class="form-note" data-form-note>WhatsApp will open with your message ready to send.</p>
+          </form>
+
+          <div class="contact-links">
+            <a href="mailto:jyotishmansaikia.web@gmail.com">Email</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Easy Solutions. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Glassmorphic WhatsApp Floating Widget -->
+  <div class="wa-widget" id="wa-widget">
+    <button class="wa-bubble" id="wa-bubble-btn" aria-label="Chat with us on WhatsApp">
+      <!-- High-fidelity custom inline SVG WhatsApp icon -->
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+        <path d="M12.012 2C6.5 2 2.012 6.5 2.012 12c0 2.057.568 4.025 1.637 5.762L2 22.012l4.375-1.425C7.994 21.438 9.943 22 12.012 22c5.512 0 10-4.488 10-10s-4.488-10-10-10zm0 18.25c-1.85 0-3.612-.488-5.163-1.4l-.375-.225-2.613.85.862-2.55-.25-.4A8.216 8.216 0 0 1 3.762 12c0-4.55 3.7-8.25 8.25-8.25s8.25 3.7 8.25 8.25-3.7 8.25-8.25 8.25zm4.775-6.388c-.263-.125-1.55-.762-1.787-.85-.238-.087-.413-.125-.588.125-.175.25-.675.85-.825 1.025-.15.175-.3.2-.563.075-.262-.125-1.112-.413-2.125-1.313-.787-.7-1.312-1.575-1.462-1.837-.15-.263-.013-.4.125-.538.125-.125.263-.3.4-.45.137-.15.175-.25.262-.412.088-.163.038-.3-.012-.4-.05-.1-.588-1.425-.8-1.938-.213-.512-.425-.437-.588-.437-.15 0-.325-.013-.5-.013-.175 0-.462.063-.7.325-.238.263-.913.888-.913 2.163 0 1.275.925 2.513 1.05 2.688.125.175 1.82 2.775 4.4 3.887.613.263 1.088.425 1.463.538.613.2 1.175.175 1.612.112.488-.075 1.55-.638 1.775-1.25.225-.613.225-1.138.163-1.25-.063-.112-.238-.175-.5-.3z"/>
+      </svg>
+    </button>
+
+    <div class="wa-chatbox" id="wa-chatbox" aria-hidden="true">
+      <div class="wa-chatbox-header">
+        <div class="wa-chatbox-avatar">ES</div>
+        <div class="wa-chatbox-status">
+          <h4>Easy Solutions</h4>
+          <p><span></span> Online</p>
+        </div>
+        <button class="wa-chatbox-close" id="wa-chatbox-close" aria-label="Close chat">×</button>
+      </div>
+
+      <div class="wa-chatbox-body">
+        <div class="wa-chatbox-msg bubble-received">
+          <p>Hi there! 👋 How can I help you build your dream website today?</p>
+          <span class="wa-chatbox-time" id="wa-chatbox-time">14:10</span>
+        </div>
+      </div>
+
+      <form class="wa-chatbox-footer" id="wa-chatbox-form">
+        <input type="text" id="wa-chatbox-input" placeholder="Type a message..." aria-label="WhatsApp message text" required autocomplete="off">
+        <button type="submit" aria-label="Send to WhatsApp">
+          <span class="material-symbols-outlined">send</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
